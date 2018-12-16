@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2c7f7c5-3758-417c-b040-c370a9260c58" name="Default Changelist" comment="" />
+    <list default="true" id="b2c7f7c5-3758-417c-b040-c370a9260c58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostTab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PointOfSale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Right.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Authorizator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/ServiceApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/addresses.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/carts.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/orders.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/points.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/products.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/rights.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/role.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/user.sql" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -23,7 +52,17 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PostTab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PostTab" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -32,7 +71,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,12 +95,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544998766774</updated>
-      <workItem from="1544998768287" duration="295000" />
+      <workItem from="1544998768287" duration="663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295000" />
+    <option name="totallyTimeSpent" value="663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -76,7 +115,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.9672668" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.33224222" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -98,5 +137,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
 </project>
