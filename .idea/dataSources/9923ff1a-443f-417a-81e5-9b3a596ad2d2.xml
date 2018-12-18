@@ -1128,13 +1128,12 @@
     </column>
     <column id="281" parent="245" name="PRICE">
       <Position>3</Position>
-      <DataType>bigint(20)|0s</DataType>
+      <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="282" parent="245" name="AMOUNT">
       <Position>4</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="283" parent="245" name="NAME">
