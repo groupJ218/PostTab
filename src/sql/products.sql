@@ -10,6 +10,8 @@ CREATE TABLE mydb.products
   PRIMARY KEY (ID)
 );
 
+INSERT INTO mydb.products (POINT_ID, PRICE, AMOUNT, NAME , DESCRIPTION) VALUES (?,?,?,?,?);
+
 ALTER TABLE mydb.products MODIFY PRICE DOUBLE ;
 
 ALTER TABLE mydb.products MODIFY AMOUNT DOUBLE ;
