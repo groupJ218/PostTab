@@ -10,6 +10,7 @@ public class Main {
         product.setPrice(1200.00);
         product.setAmount(1.0);
         product.setDescription("XS");
+        product.setPointId(1);
 
         DaoProduct.addProduct(product);
     }

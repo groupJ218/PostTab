@@ -6,3 +6,5 @@ CREATE TABLE mydb.points
   PRIMARY KEY (ID),
   FOREIGN KEY (ADDRESS_ID) REFERENCES addresses (ID)
 );
+
+INSERT INTO mydb.points (ADDRESS_ID, NAME) VALUES (?, ?);

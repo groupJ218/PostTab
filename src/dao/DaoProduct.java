@@ -18,7 +18,7 @@ public class DaoProduct {
             ps.setDouble(3, product.getAmount());
             ps.setString(4, product.getName());
             ps.setString(5,product.getDescription());
-            ps.executeQuery();
+            ps.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
