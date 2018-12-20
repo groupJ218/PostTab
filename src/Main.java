@@ -1,4 +1,6 @@
+import dao.DaoPointOfSale;
 import dao.DaoProduct;
+import models.PointOfSale;
 import models.Product;
 
 import java.util.ArrayList;
@@ -6,7 +8,8 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-//        Product product = new Product();
+
+        //        Product product = new Product();
 //
 //        product.setName("Apple");
 //        product.setPrice(900.00);
@@ -16,6 +19,8 @@ public class Main {
 
 //        DaoProduct.addProduct(product);
 
-        System.out.println(DaoProduct.getProdByPointId(2).toString());
+//        System.out.println(DaoProduct.getProdByPointId(2).toString());
+
+        System.out.println(DaoPointOfSale.getPointByPointId(1).toString());
     }
 }
