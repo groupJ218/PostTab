@@ -3,7 +3,6 @@ package dao;
 import models.PointOfSale;
 import utils.Connector;
 
-import javax.xml.transform.Result;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
