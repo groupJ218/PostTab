@@ -5,7 +5,6 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-import javafx.scene.control.TableView;
 import models.PointOfSale;
 import services.MenuButton;
 
@@ -44,8 +43,8 @@ public class Main extends Application {
         PointOfSale point = DaoPointOfSale.getPointByPointId(1);
         BorderPane root = new BorderPane();
         Scene scene = new Scene(root);
-        boolean add = scene.getStylesheets().add("application.css");
-        System.out.println("Is added file application.css  " + add);
+//        boolean add = scene.getStylesheets().add("application.css");
+//        System.out.println("Is added file application.css  " + add);
         primaryStage.setTitle(point.getName());
         primaryStage.setScene(MenuButton.productsInfo(point));
         primaryStage.show();

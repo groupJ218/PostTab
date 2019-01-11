@@ -1,4 +1,4 @@
-package TestPackage.Services;
+package services;
 
 public class ServiceApp {
 }

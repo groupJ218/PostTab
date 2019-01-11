@@ -33,8 +33,6 @@ public class DaoProduct {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
         return products;
     }
 
