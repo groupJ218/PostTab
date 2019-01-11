@@ -27,8 +27,8 @@ public class MenuButton {
         table.setEditable(true);
 
         TableColumn nameColumn = new TableColumn<Product, String>("Name");
-        TableColumn priceColumn = new TableColumn <Product, Long>("Price");
-        TableColumn amountColumn = new TableColumn<Product, Long>("Amount");
+        TableColumn priceColumn = new TableColumn <Product, Double>("Price");
+        TableColumn amountColumn = new TableColumn<Product, Double>("Amount");
         TableColumn descriptionColumn = new TableColumn<Product,String>("Description");
 
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
