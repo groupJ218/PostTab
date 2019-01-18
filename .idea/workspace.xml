@@ -10,14 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2c7f7c5-3758-417c-b040-c370a9260c58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostTab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PostTab.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,89 +42,115 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/MenuButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoAddress.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.69062024">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="22" column="64" lean-forward="true" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/debug.log">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="24">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/services/MenuButton.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="576">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="168">
+                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoAddress.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="48">
+                  <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret lean-forward="true" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -249,14 +270,6 @@
               <item name="PostTab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PostTab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PostTab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -284,7 +297,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547627405676" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547800979289" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -322,6 +335,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.4" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.4" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:\Program Files\Java\jdk1.8.0_131\jre" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="PostTab:Web exploded">
@@ -425,7 +439,8 @@
       <workItem from="1547213939918" duration="3206000" />
       <workItem from="1547232760473" duration="3814000" />
       <workItem from="1547467632906" duration="669000" />
-      <workItem from="1547570525874" duration="7888000" />
+      <workItem from="1547570525874" duration="9202000" />
+      <workItem from="1547743061753" duration="6600000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring architecture">
       <created>1544999744705</created>
@@ -525,17 +540,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547467977642</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Html_css_presentation">
+      <created>1547627564453</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1547627564454</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60899000" />
+    <option name="totallyTimeSpent" value="68813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.28441754" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987775" weight="0.28895614" />
       <window_info id="Structure" order="1" sideWeight="0.5012225" side_tool="true" weight="0.14372164" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -625,7 +647,8 @@
     <MESSAGE value="DAO_products_Method_getProdByPointId_and_getProductById" />
     <MESSAGE value="JavaFX_example_using" />
     <MESSAGE value="add_maven_and_web_modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_maven_and_web_modules" />
+    <MESSAGE value="Html_css_presentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Html_css_presentation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Cart.java">
@@ -910,9 +933,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -937,20 +958,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoAddress.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/debug.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/MenuButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -964,41 +989,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/MenuButton.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+        <state relative-caret-position="48">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+        <state relative-caret-position="336">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="144">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state relative-caret-position="240">
+          <caret line="22" column="64" lean-forward="true" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
         </state>
       </provider>
     </entry>
