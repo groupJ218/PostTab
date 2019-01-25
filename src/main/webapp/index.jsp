@@ -9,19 +9,22 @@
 <html>
   <head>
     <title>$Title$</title>
-      <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css/bootstrap.min.css">
+      <%--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">--%>
+      <link href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" rel="stylesheet" />
+
+      <%--<link href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-theme.css" rel="stylesheet" />--%>
+      <%--<link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css/bootstrap.min.css">--%>
   </head>
   <body>
-  text
-  <div class="container">
-      <form action="/login" method="post">
+  <div class="container" style="margin-top:15px ">
+      <form action="/Post_TAB/main" method="post">
           <div class="row">
               <div class="col-1">Email</div>
-              <div class="col-4"><input class="padding-left" type="email" placeholder="email"/></div>
+              <div class="col-4"><input name="email" class="padding-left" type="email" placeholder="email"/></div>
           </div>
           <div class="row">
               <div class="col-1">Password:</div>
-              <div class="col-11"><input class="padding-left" type="password" placeholder="password"/></div>
+              <div class="col-11"><input name="pass" class="padding-left" type="password" placeholder="password"/></div>
           </div>
           <div class="row">
               <div class="col-1">Press:</div>
@@ -29,5 +32,6 @@
           </div>
       </form>
   </div>
+  <%--<script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>--%>
   </body>
 </html>
