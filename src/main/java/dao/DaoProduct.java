@@ -16,7 +16,7 @@ public class DaoProduct {
         String query = "SELECT * FROM mydb.products WHERE POINT_ID=" + pointId;
 
         try {
-            Statement st = Connector.getConnection().createStatement();
+            Statement st = new Connector().getConnection().createStatement();
             ResultSet rs = st.executeQuery(query);
 
             while (rs.next()){
@@ -40,7 +40,7 @@ public class DaoProduct {
         String query = "INSERT INTO mydb.products (POINT_ID, PRICE, AMOUNT, NAME , DESCRIPTION) VALUES (?,?,?,?,?)";
 
         try {
-            PreparedStatement ps = Connector.getConnection().prepareStatement(query);
+            PreparedStatement ps = new Connector().getConnection().prepareStatement(query);
             ps.setLong(1, product.getPointId());
             ps.setDouble(2, product.getPrice());
             ps.setDouble(3, product.getAmount());
@@ -50,7 +50,7 @@ public class DaoProduct {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            Connector.closeConnection();
+//            Connector.closeConnection();
         }
     }
 }

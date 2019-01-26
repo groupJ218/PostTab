@@ -40,13 +40,13 @@ public class Main extends Application {
         primaryStage.setHeight(bounds.getHeight());
         primaryStage.setMaximized(true);
 //        primaryStage.setFullScreen(true);
-        PointOfSale point = DaoPointOfSale.getPointByPointId(1);
+//        PointOfSale point = DaoPointOfSale.getPointByPointId(1);
         BorderPane root = new BorderPane();
         Scene scene = new Scene(root);
 //        boolean add = scene.getStylesheets().add("application.css");
 //        System.out.println("Is added file application.css  " + add);
-        primaryStage.setTitle(point.getName());
-        primaryStage.setScene(MenuButton.productsInfo(point));
+//        primaryStage.setTitle(point.getName());
+//        primaryStage.setScene(MenuButton.productsInfo(point));
         primaryStage.show();
     }
 }

@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="7">
-      <module name="PostTab" target="7" />
+      <module name="PostTab" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

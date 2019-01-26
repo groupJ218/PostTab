@@ -1,6 +1,8 @@
 package controller;
 
+import dao.DaoAddress;
 import dao.DaoPointOfSale;
+import dao.DaoProduct;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,8 +18,11 @@ public class MainController extends HttpServlet {
         String pass = request.getParameter("pass");
         String email = request.getParameter("email");
         String msg = "Pass " + pass + " Email  " + email;
-        System.out.println(DaoPointOfSale.getPointByPointId(1));
-        request.setAttribute("point", "here must be point object ");
+        System.out.println(DaoPointOfSale.getPointByPointId("Comfy"));
+        System.out.println(DaoProduct.getProdByPointId(1));
+        System.out.println(DaoAddress.getAddressById(1));
+
+        request.setAttribute("point", DaoProduct.getProdByPointId(1));
 
         request.getRequestDispatcher("result.jsp").forward(request, response);
     }
