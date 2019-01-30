@@ -50,7 +50,7 @@ public class DaoProduct {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-//            Connector.closeConnection();
+            Connector.closeConnection();
         }
     }
 }

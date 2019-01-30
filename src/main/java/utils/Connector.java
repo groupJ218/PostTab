@@ -31,11 +31,11 @@ public class Connector {
         return connection;
     }
 
-//    public static void closeConnection() {
-//        try {
-//            Connector.getConnection().close();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//    }
+    public static void closeConnection() {
+        try {
+           new Connector().getConnection().close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
