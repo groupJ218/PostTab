@@ -32,6 +32,9 @@
           </div>
       </form>
   </div>
+  <div>
+    <a href="/Post_TAB/rightsGetAll" >Show all rights</a>
+  </div>
   <%--<script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>--%>
   </body>
 </html>

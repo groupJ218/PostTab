@@ -1,4 +1,5 @@
 import dao.DaoPointOfSale;
+import dao.DaoRights;
 import javafx.application.Application;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
@@ -6,16 +7,21 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import models.PointOfSale;
+import models.Right;
 import services.MenuButton;
 
 public class Main extends Application {
     public static void main(String[] args) {
+
+        DaoRights.addRight(new Right("ADMIN"));
+        System.out.println(DaoRights.getAll().toString());
+
         /* JavaFx example....
          First need extend Application from javafx.s..
          in main method add *-- lunch method(args); --*
          Then override public void start(); from javafx Application
         */
-        launch(args);
+//        launch(args);
 
 /*        Product product = new Product();
         product.setName("Apple");

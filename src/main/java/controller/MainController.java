@@ -18,6 +18,7 @@ public class MainController extends HttpServlet {
         String pass = request.getParameter("pass");
         String email = request.getParameter("email");
         String msg = "Pass " + pass + " Email  " + email;
+
         System.out.println(DaoPointOfSale.getPointByPointId("Comfy"));
         System.out.println(DaoProduct.getProdByPointId(1));
         System.out.println(DaoAddress.getAddressById(1));
@@ -32,7 +33,7 @@ public class MainController extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         System.out.println("Servlet" + count++);
-        response.encodeRedirectURL("index.jsp");
+        response.encodeRedirectURL("/index.jsp");
     }
 
 }
