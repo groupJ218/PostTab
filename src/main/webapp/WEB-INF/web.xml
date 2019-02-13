@@ -17,6 +17,10 @@
         <servlet-name>Rights_Create</servlet-name>
         <servlet-class>controller.rights.RightsCreate</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Rights_Delete</servlet-name>
+        <servlet-class>controller.rights.RightsDelete</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>Main_Controller</servlet-name>
@@ -29,5 +33,9 @@
     <servlet-mapping>
         <servlet-name>Rights_Create</servlet-name>
         <url-pattern>/rightsCreate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Rights_Delete</servlet-name>
+        <url-pattern>/rightsDelete</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -82,4 +82,26 @@ public class DaoRights {
     }
 
 
+    public static void deleteById(long id) {
+        String query = "DELETE FROM mydb.rights WHERE ID=" + id;
+        executeStringQuery(query);
+    }
+
+    public static void updateById(long id, String name) {
+
+        String query = "UPDATE  mydb.rights SET NAME='" + name + "' WHERE ID=" + id;
+        executeStringQuery(query);
+
+    }
+
+    private static void executeStringQuery(String query) {
+        try {
+            Statement st = new Connector().getConnection().createStatement();
+            st.execute(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            Connector.closeConnection();
+        }
+    }
 }

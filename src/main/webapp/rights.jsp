@@ -32,14 +32,22 @@
         %>
 
         <tr>
+
             <th scope="row"><%= count++%>
             </th>
             <td><%=right.getId()%>
             </td>
             <td><%=right.getName()%>
             </td>
-            <td>Update</td>
-            <td><a class="button" href="/Post_TAB/rightsDelete?id=<%= right.getId() %>">Delete</a></td>
+            <td>
+                <a type="submit" class="btn-group"
+                   href="/Post_TAB/rightsUpdate?id=<%=right.getId()%>&name=<%=right.getName()%>">Update
+                </a>
+            </td>
+            <td>
+                <a class="btn-danger" href="/Post_TAB/rightsDelete?id=<%= right.getId() %>">Delete</a>
+            </td>
+
         </tr>
 
         <%} %>
@@ -50,7 +58,7 @@
 <div class="container">
     <div>
         <form action="/Post_TAB/rightsCreate" method="post">
-            <input type="text" name="rightName" placeholder="Name" >
+            <input type="text" name="rightName" placeholder="Name">
             <input type="submit" value="CREATE">
         </form>
     </div>
