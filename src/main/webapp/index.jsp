@@ -35,6 +35,9 @@
   <div>
     <a href="/Post_TAB/rightsGetAll" >Show all rights</a>
   </div>
+  <div>
+    <a href="/Post_TAB/products">Show all Products</a>
+  </div>
   <%--<script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>--%>
   </body>
 </html>

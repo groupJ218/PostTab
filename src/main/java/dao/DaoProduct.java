@@ -15,6 +15,34 @@ public class DaoProduct {
         ArrayList<Product> products = new ArrayList<>();
         String query = "SELECT * FROM mydb.products WHERE POINT_ID=" + pointId;
 
+        return getProductsFromDB(products, query);
+    }
+
+    public static void addProduct(Product product) {
+        String query = "INSERT INTO mydb.products (POINT_ID, PRICE, AMOUNT, NAME , DESCRIPTION) VALUES (?,?,?,?,?)";
+
+        try {
+            PreparedStatement ps = new Connector().getConnection().prepareStatement(query);
+            ps.setLong(1, product.getPointId());
+            ps.setDouble(2, product.getPrice());
+            ps.setDouble(3, product.getAmount());
+            ps.setString(4, product.getName());
+            ps.setString(5, product.getDescription());
+            ps.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            Connector.closeConnection();
+        }
+    }
+
+    public static ArrayList<Product> getAll() {
+        ArrayList<Product> products = new ArrayList<>();
+        String query = "SELECT * FROM mydb.products";
+        return getProductsFromDB(products, query);
+    }
+
+    private static ArrayList<Product> getProductsFromDB(ArrayList<Product> products, String query) {
         try {
             Statement st = new Connector().getConnection().createStatement();
             ResultSet rs = st.executeQuery(query);
@@ -34,23 +62,5 @@ public class DaoProduct {
             e.printStackTrace();
         }
         return products;
-    }
-
-    public static void addProduct(Product product) {
-        String query = "INSERT INTO mydb.products (POINT_ID, PRICE, AMOUNT, NAME , DESCRIPTION) VALUES (?,?,?,?,?)";
-
-        try {
-            PreparedStatement ps = new Connector().getConnection().prepareStatement(query);
-            ps.setLong(1, product.getPointId());
-            ps.setDouble(2, product.getPrice());
-            ps.setDouble(3, product.getAmount());
-            ps.setString(4, product.getName());
-            ps.setString(5, product.getDescription());
-            ps.execute();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            Connector.closeConnection();
-        }
     }
 }

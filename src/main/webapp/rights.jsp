@@ -16,7 +16,7 @@
 <div class="container">
     <table class="table table-striped table-dark">
         <thead>
-        <tr>
+        <tr class="h3">
             <th scope="col">#</th>
             <th scope="col">Right ID</th>
             <th scope="col">Right Name</th>
@@ -32,20 +32,17 @@
         %>
 
         <tr>
-
-            <th scope="row"><%= count++%>
-            </th>
-            <td><%=right.getId()%>
-            </td>
-            <td><%=right.getName()%>
-            </td>
+            <form action="rightsUpdate">
+                <th scope="row"><%= count++%>
+                </th>
+                <td><input class="form-control" type="text" name="id" value="<%=right.getId()%>" readonly>
+                </td>
+                <td><input class="form-control" type="text" name="name" value="<%=right.getName()%>">
+                </td>
+                <td><input type="submit" class="btn btn-info" value="Update"></td>
+            </form>
             <td>
-                <a type="submit" class="btn-group"
-                   href="/Post_TAB/rightsUpdate?id=<%=right.getId()%>&name=<%=right.getName()%>">Update
-                </a>
-            </td>
-            <td>
-                <a class="btn-danger" href="/Post_TAB/rightsDelete?id=<%= right.getId() %>">Delete</a>
+                <a class="btn btn-danger" href="/Post_TAB/rightsDelete?id=<%= right.getId() %>">Delete</a>
             </td>
 
         </tr>
@@ -63,7 +60,7 @@
         </form>
     </div>
 </div>
-
+<hr/>
 <a href="/Post_TAB/main">HOME </a>
 </body>
 </html>
