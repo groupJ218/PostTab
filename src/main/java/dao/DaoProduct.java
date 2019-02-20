@@ -18,6 +18,12 @@ public class DaoProduct {
         return getProductsFromDB(products, query);
     }
 
+    public static Product getProdById(long Id) {
+        ArrayList<Product> products = new ArrayList<>();
+        String query = "SELECT * FROM mydb.products WHERE ID=" + Id;
+        return getProductsFromDB(products, query).get(0);
+    }
+
     public static void addProduct(Product product) {
         String query = "INSERT INTO mydb.products (POINT_ID, PRICE, AMOUNT, NAME , DESCRIPTION) VALUES (?,?,?,?,?)";
 

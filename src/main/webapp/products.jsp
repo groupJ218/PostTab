@@ -32,7 +32,7 @@
                     <div class="caption">
                         <h3><%= product.getName()%></h3>
                         <p><%= product.getDescription()%></p>
-                        <p align="center"><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                        <p align="center"><a href="/Post_TAB/products/product?id=<%=product.getId()%>" class="btn btn-primary btn-block">Open</a></p>
                     </div>
                 </div>
             </li>
