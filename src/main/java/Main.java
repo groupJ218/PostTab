@@ -1,4 +1,5 @@
 import dao.DaoPointOfSale;
+import dao.DaoProduct;
 import dao.DaoRights;
 import javafx.application.Application;
 import javafx.geometry.Rectangle2D;
@@ -13,9 +14,9 @@ import services.MenuButton;
 public class Main extends Application {
     public static void main(String[] args) {
 
-        DaoRights.addRight(new Right("ADMIN"));
-        System.out.println(DaoRights.getAll().toString());
-
+//        DaoRights.addRight(new Right("ADMIN"));
+//        System.out.println(DaoRights.getAll().toString());
+        System.out.println(DaoProduct.getAll().toString());
         /* JavaFx example....
          First need extend Application from javafx.s..
          in main method add *-- lunch method(args); --*
