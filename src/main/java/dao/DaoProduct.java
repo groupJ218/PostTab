@@ -45,15 +45,12 @@ public class DaoProduct {
     public static ArrayList<Product> getAll() {
         ArrayList<Product> products = new ArrayList<>();
         String query = "SELECT * FROM mydb.products";
-        return getProductsFromDB(products, query);
-    }
-
-    private static ArrayList<Product> getProductsFromDB(ArrayList<Product> products, String query) {
         try {
             Statement st = new Connector().getConnection().createStatement();
             ResultSet rs = st.executeQuery(query);
-
-            while (rs.next()){
+            int count = 0;
+            while (rs.next()) {
+                System.out.println(count++);
                 Product product = new Product();
                 product.setId(rs.getLong("ID"));
                 product.setPointId(rs.getLong("POINT_ID"));
@@ -63,7 +60,30 @@ public class DaoProduct {
                 product.setDescription(rs.getString("DESCRIPTION"));
                 products.add(product);
             }
+            System.out.println("getAll Method" + products.toString());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return products;
+    }
 
+    private static ArrayList<Product> getProductsFromDB(ArrayList<Product> products, String query) {
+        try {
+            Statement st = new Connector().getConnection().createStatement();
+            ResultSet rs = st.executeQuery(query);
+            int count = 0;
+            while (rs.next()) {
+                System.out.println(count++);
+                Product product = new Product();
+                product.setId(rs.getLong("ID"));
+                product.setPointId(rs.getLong("POINT_ID"));
+                product.setPrice(rs.getDouble("PRICE"));
+                product.setAmount(rs.getDouble("AMOUNT"));
+                product.setName(rs.getString("NAME"));
+                product.setDescription(rs.getString("DESCRIPTION"));
+                products.add(product);
+            }
+            System.out.println("getAll Method" + products.toString());
         } catch (SQLException e) {
             e.printStackTrace();
         }

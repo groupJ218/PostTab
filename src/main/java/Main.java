@@ -14,9 +14,13 @@ import services.MenuButton;
 public class Main extends Application {
     public static void main(String[] args) {
 
+        System.out.println(DaoProduct.getAll());
+        System.out.println(DaoProduct.getProdById(4));
+        System.out.println(DaoProduct.getProdByPointId(1));
+
 //        DaoRights.addRight(new Right("ADMIN"));
 //        System.out.println(DaoRights.getAll().toString());
-        System.out.println(DaoProduct.getAll().toString());
+
         /* JavaFx example....
          First need extend Application from javafx.s..
          in main method add *-- lunch method(args); --*
@@ -54,6 +58,6 @@ public class Main extends Application {
 //        System.out.println("Is added file application.css  " + add);
 //        primaryStage.setTitle(point.getName());
 //        primaryStage.setScene(MenuButton.productsInfo(point));
-        primaryStage.show();
+//        primaryStage.show();
     }
 }

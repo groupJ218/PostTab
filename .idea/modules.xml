@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PostTab.iml" filepath="$PROJECT_DIR$/PostTab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Post_TAB.iml" filepath="$PROJECT_DIR$/Post_TAB.iml" />
     </modules>
   </component>
 </project>

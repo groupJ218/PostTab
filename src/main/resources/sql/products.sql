@@ -10,6 +10,8 @@ CREATE TABLE mydb.products
   PRIMARY KEY (ID)
 );
 
+SELECT * FROM mydb.products;
+
 SELECT * FROM mydb.products WHERE POINT_ID=1;
 
 INSERT INTO mydb.products (POINT_ID, PRICE, AMOUNT, NAME , DESCRIPTION) VALUES (?,?,?,?,?);

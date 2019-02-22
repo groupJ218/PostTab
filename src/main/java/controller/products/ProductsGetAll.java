@@ -18,9 +18,8 @@ public class ProductsGetAll extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("Get method url products");
         ArrayList<Product> products = DaoProduct.getAll();
-        System.out.println("Method Get from class servlet " + products.toString());
+        System.out.println(products.toString());
         request.setAttribute("products", products);
         request.getRequestDispatcher("/products.jsp").forward(request, response);
     }

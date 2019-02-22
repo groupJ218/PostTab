@@ -25,6 +25,6 @@
     <orderEntry type="library" name="mysql-connector-java-5.1.39-bin" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.47" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
-    <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
+    <orderEntry type="library" name="Maven: jstl:jstl:1.2" level="project" />
   </component>
 </module>

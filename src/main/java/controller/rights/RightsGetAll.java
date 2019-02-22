@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class RightsGetAll extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        System.out.println("Rights get");
         ArrayList<Right> rights = DaoRights.getAll();
         req.setAttribute("rights", rights);
         req.getRequestDispatcher("/rights.jsp").forward(req, resp);
@@ -21,7 +21,7 @@ public class RightsGetAll extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        System.out.println("Rights POST");
         String rightName = req.getParameter("rightName");
         DaoRights.addRight(new Right(rightName));
         doGet(req, resp);
