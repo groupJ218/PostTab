@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="Post_TAB">
+    <output-path>$PROJECT_DIR$/out/artifacts/Post_TAB</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Post_TAB" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.47" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+        </element>
+      </element>
+      <element id="library" level="project" name="mysql-connector-java-5.1.39-bin" />
+      <element id="javaee-facet-resources" facet="Post_TAB/web/Web" />
+    </root>
+  </artifact>
+</component>

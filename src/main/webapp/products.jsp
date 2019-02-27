@@ -24,7 +24,7 @@
 <div class="container">
     <div class="row">
         <ul class="thumbnails">
-            <c:forEach items="products" var="product">
+            <c:forEach items="${products}" var="product">
                 <li class="span4">
                     <div class="thumbnail">
                         <img src="http://placehold.it/320x200" alt="ALT NAME">
