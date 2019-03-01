@@ -7,16 +7,30 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import models.Cart;
 import models.PointOfSale;
 import models.Right;
+import org.hibernate.Session;
 import services.MenuButton;
+import utils.HibernateConnector;
 
-public class Main extends Application {
+public class Main  {
     public static void main(String[] args) {
 
-        System.out.println(DaoProduct.getAll());
-        System.out.println(DaoProduct.getProdById(4));
-        System.out.println(DaoProduct.getProdByPointId(1));
+        Cart cart = new Cart(51);
+        Session session = HibernateConnector.getSession();
+        session.beginTransaction();
+        session.save(cart);
+        session.getTransaction().commit();
+        session.close();
+        HibernateConnector.sessionFactoryShutdown();
+    }
+}
+
+
+//        System.out.println(DaoProduct.getAll());
+//        System.out.println(DaoProduct.getProdById(4));
+//        System.out.println(DaoProduct.getProdByPointId(1));
 
 //        DaoRights.addRight(new Right("ADMIN"));
 //        System.out.println(DaoRights.getAll().toString());
@@ -38,26 +52,26 @@ public class Main extends Application {
         System.out.println(DaoProduct.getProdByPointId(2).toString());
         System.out.println(DaoPointOfSale.getPointByPointId(1).toString());
 */
-    }
+//    }
 
-    @Override
-    public void start(Stage primaryStage){
-
-        Screen screen = Screen.getPrimary();
-        Rectangle2D bounds = screen.getVisualBounds();
-        primaryStage.setX(bounds.getMinX());
-        primaryStage.setY(bounds.getMinY());
-        primaryStage.setWidth(bounds.getWidth());
-        primaryStage.setHeight(bounds.getHeight());
-        primaryStage.setMaximized(true);
+//    @Override
+//    public void start(Stage primaryStage){
+//
+//        Screen screen = Screen.getPrimary();
+//        Rectangle2D bounds = screen.getVisualBounds();
+//        primaryStage.setX(bounds.getMinX());
+//        primaryStage.setY(bounds.getMinY());
+//        primaryStage.setWidth(bounds.getWidth());
+//        primaryStage.setHeight(bounds.getHeight());
+//        primaryStage.setMaximized(true);
 //        primaryStage.setFullScreen(true);
 //        PointOfSale point = DaoPointOfSale.getPointByPointId(1);
-        BorderPane root = new BorderPane();
-        Scene scene = new Scene(root);
+//        BorderPane root = new BorderPane();
+//        Scene scene = new Scene(root);
 //        boolean add = scene.getStylesheets().add("application.css");
 //        System.out.println("Is added file application.css  " + add);
 //        primaryStage.setTitle(point.getName());
 //        primaryStage.setScene(MenuButton.productsInfo(point));
 //        primaryStage.show();
-    }
-}
+//    }
+//}
