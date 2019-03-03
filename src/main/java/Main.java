@@ -17,7 +17,7 @@ import utils.HibernateConnector;
 public class Main  {
     public static void main(String[] args) {
 
-        Cart cart = new Cart(51);
+        Cart cart = new Cart(567);
         Session session = HibernateConnector.getSession();
         session.beginTransaction();
         session.save(cart);

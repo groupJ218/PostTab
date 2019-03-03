@@ -1,17 +1,20 @@
 package models;
 
+import lombok.*;
+
 import javax.persistence.*;
 import java.util.Map;
+
 @Entity
-@Table (name = "carts_")
+@Table(name = "carts_")
 public class Cart {
 
     @Id
     @GeneratedValue
-    @Column (name = "ID")
+    @Column(name = "ID")
     private long id;
 
-    @Column (name = "USER_ID", nullable = false, length = 300)
+    @Column(name = "USER_ID", nullable = false, length = 300)
     private long userId;
 
 //    Map<Long, Double> productsInCart;
