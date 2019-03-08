@@ -1,29 +1,39 @@
-import dao.DaoPointOfSale;
-import dao.DaoProduct;
-import dao.DaoRights;
-import javafx.application.Application;
-import javafx.geometry.Rectangle2D;
-import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
-import javafx.stage.Screen;
-import javafx.stage.Stage;
 import models.Cart;
-import models.PointOfSale;
-import models.Right;
 import org.hibernate.Session;
-import services.MenuButton;
 import utils.HibernateConnector;
 
-public class Main  {
+public class Main {
     public static void main(String[] args) {
+        long id = 6;
 
-        Cart cart = new Cart(567);
         Session session = HibernateConnector.getSession();
         session.beginTransaction();
-        session.save(cart);
+        session.delete(getCartById(id));
         session.getTransaction().commit();
         session.close();
-        HibernateConnector.sessionFactoryShutdown();
+
+    }
+
+    private static Cart getCartById(long id) {
+        Cart tmpCart;
+        Session session = HibernateConnector.getSession();
+        tmpCart = (Cart) session.get(Cart.class, id);
+        session.close();
+      return tmpCart;
+    }
+
+    private static void createListCarts() {
+        int count = 0;
+        while (count != 7) {
+            Cart cart = new Cart(7);
+            Session session = HibernateConnector.getSession();
+            session.beginTransaction();
+            session.save(cart);
+            session.getTransaction().commit();
+            session.close();
+            count++;
+            HibernateConnector.sessionFactoryShutdown();
+        }
     }
 }
 

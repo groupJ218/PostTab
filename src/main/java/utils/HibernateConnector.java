@@ -10,13 +10,11 @@ public class HibernateConnector {
     private static SessionFactory sessionFactory;
 
     public static SessionFactory getSessionFactory() {
-//        if (sessionFactory == null) {
             try {
                 sessionFactory = new Configuration().configure().buildSessionFactory();
             } catch (HibernateException hibex) {
                 hibex.printStackTrace();
             }
-//        }
         return sessionFactory;
     }
 

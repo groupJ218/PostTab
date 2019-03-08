@@ -2,12 +2,14 @@ package models;
 
 import lombok.*;
 
+import javax.naming.directory.SearchResult;
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Map;
 
 @Entity
 @Table(name = "carts_")
-public class Cart {
+public class Cart implements Serializable {
 
     @Id
     @GeneratedValue
@@ -24,6 +26,14 @@ public class Cart {
     }
 
     public Cart() {
+    }
+
+    @Override
+    public String toString() {
+        return "Cart{" +
+                "id=" + id +
+                ", userId=" + userId +
+                '}';
     }
 
     //
