@@ -1,14 +1,27 @@
 package models;
 
+import javax.persistence.*;
+
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Product {
 
+@Entity
+@Table(name = "products_")
+public class Product implements Serializable {
+    @Id
+    @GeneratedValue
+    @Column(name = "ID")
     private long id;
+    @Column(name = "POINT_ID")
     private long pointId;
+    @Column(name = "PRICE")
     private double price;
+    @Column(name = "AMOUNT")
     private double amount;
+    @Column(name = "NAME")
     private String name;
+    @Column(name = "DESCRIPTION")
     private String description;
 
     public long getId() {
@@ -78,6 +91,8 @@ public class Product {
         this.name = name;
         this.description = description;
     }
+
+
 
     @Override
     public String toString() {

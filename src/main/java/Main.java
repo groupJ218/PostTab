@@ -1,17 +1,48 @@
 import models.Cart;
+import models.Product;
 import org.hibernate.Session;
 import utils.HibernateConnector;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        long id = 6;
+        long id = 1;
+        Product product = new Product(1, 2.5, 150, "Player", "mp3, vma mp4");
 
+        Cart cart = getCartById(id);
+        List<Product> productsInCart =   cart.getProductsInCart();
+        productsInCart.add(product);
+        cart.setProductsInCart(productsInCart);
+        System.out.println(cart.toString());
+        updateCart(cart);
+        System.out.println(getCartById(id));
+    }
+
+    private static void updateCart(Cart cart) {
+        Session session = HibernateConnector.getSession();
+        session.beginTransaction();
+        session.update(cart);
+        session.getTransaction().commit();
+        session.close();
+    }
+
+    private static void createProduct(Product product) {
+        Session session = HibernateConnector.getSession();
+        session.beginTransaction();
+        session.save(product);
+        session.getTransaction().commit();
+        session.close();
+    }
+
+
+    private static void deleteCartById(long id) {
         Session session = HibernateConnector.getSession();
         session.beginTransaction();
         session.delete(getCartById(id));
         session.getTransaction().commit();
         session.close();
-
     }
 
     private static Cart getCartById(long id) {
@@ -19,7 +50,7 @@ public class Main {
         Session session = HibernateConnector.getSession();
         tmpCart = (Cart) session.get(Cart.class, id);
         session.close();
-      return tmpCart;
+        return tmpCart;
     }
 
     private static void createListCarts() {

@@ -5,6 +5,8 @@ import lombok.*;
 import javax.naming.directory.SearchResult;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @Entity
@@ -19,8 +21,10 @@ public class Cart implements Serializable {
     @Column(name = "USER_ID", nullable = false, length = 300)
     private long userId;
 
-//    Map<Long, Double> productsInCart;
-//
+    @OneToMany
+    @Transient
+    private List<Product> productsInCart = new ArrayList<>();
+
     public Cart(long userId) {
         this.userId = userId;
     }
@@ -33,23 +37,31 @@ public class Cart implements Serializable {
         return "Cart{" +
                 "id=" + id +
                 ", userId=" + userId +
+                ", productsInCart=" + productsInCart +
                 '}';
     }
 
-    //
-//    public long getId() {
-//        return id;
-//    }
-//
-//    public void setId(long id) {
-//        this.id = id;
-//    }
-//
-//    public long getUserId() {
-//        return userId;
-//    }
-//
-//    public void setUserId(long userId) {
-//        this.userId = userId;
-//    }
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
+    }
+
+    public List<Product> getProductsInCart() {
+        return productsInCart;
+    }
+
+    public void setProductsInCart(List<Product> productsInCart) {
+        this.productsInCart = productsInCart;
+    }
 }
