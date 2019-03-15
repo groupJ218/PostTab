@@ -21,8 +21,7 @@ public class Cart implements Serializable {
     @Column(name = "USER_ID", nullable = false, length = 300)
     private long userId;
 
-    @OneToMany
-    @Transient
+    @OneToMany (mappedBy = "cart")
     private List<Product> productsInCart = new ArrayList<>();
 
     public Cart(long userId) {

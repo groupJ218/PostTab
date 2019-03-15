@@ -9,24 +9,14 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         long id = 1;
-        Product product = new Product(1, 2.5, 150, "Player", "mp3, vma mp4");
-
-        Cart cart = getCartById(id);
-        List<Product> productsInCart =   cart.getProductsInCart();
-        productsInCart.add(product);
-        cart.setProductsInCart(productsInCart);
+        Product product = getById(1, new Product());
+        Cart cart = (Cart) getById(id,new Cart());
+        product.setCart(cart);
         System.out.println(cart.toString());
-        updateCart(cart);
-        System.out.println(getCartById(id));
+        update(cart);
+        System.out.println(getById(id, cart));
     }
 
-    private static void updateCart(Cart cart) {
-        Session session = HibernateConnector.getSession();
-        session.beginTransaction();
-        session.update(cart);
-        session.getTransaction().commit();
-        session.close();
-    }
 
     private static void createProduct(Product product) {
         Session session = HibernateConnector.getSession();
@@ -36,21 +26,30 @@ public class Main {
         session.close();
     }
 
-
-    private static void deleteCartById(long id) {
+    private static void update(Object o) {
         Session session = HibernateConnector.getSession();
         session.beginTransaction();
-        session.delete(getCartById(id));
+        session.update(o);
         session.getTransaction().commit();
         session.close();
     }
 
-    private static Cart getCartById(long id) {
-        Cart tmpCart;
+    private static void deleteById(long id, Object o) {
         Session session = HibernateConnector.getSession();
-        tmpCart = (Cart) session.get(Cart.class, id);
+        session.beginTransaction();
+        session.delete(getById(id, o.getClass()));
+        session.getTransaction().commit();
         session.close();
-        return tmpCart;
+    }
+
+    private static <T> T getById (long id, T t) {
+        T oTmp = null;
+        Class<?> cls = t.getClass();
+                Session session = HibernateConnector.getSession();
+        System.out.println(t);
+        oTmp  = (T) session.get(cls , id);
+        session.close();
+        return oTmp;
     }
 
     private static void createListCarts() {

@@ -23,6 +23,16 @@ public class Product implements Serializable {
     private String name;
     @Column(name = "DESCRIPTION")
     private String description;
+    @ManyToOne
+    private Cart cart;
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
 
     public long getId() {
         return id;
@@ -91,7 +101,6 @@ public class Product implements Serializable {
         this.name = name;
         this.description = description;
     }
-
 
 
     @Override
