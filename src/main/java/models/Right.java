@@ -4,56 +4,31 @@ import java.util.Objects;
 
 public class Right {
 
-    private long id;
-    private String name;
+    private long rightId;
+    private String rightName;
+    private Role role;
 
-    @Override
-    public String toString() {
-        return "Right{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+    public Role getRole() {
+        return role;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Right)) return false;
-        Right right = (Right) o;
-        return getId() == right.getId() &&
-                Objects.equals(getName(), right.getName());
+    public void setRole(Role role) {
+        this.role = role;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getName());
+    public long getRightId() {
+        return rightId;
     }
 
-    public long getId() {
-        return id;
+    public void setRightId(long rightId) {
+        this.rightId = rightId;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public String getRightName() {
+        return rightName;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Right(String name) {
-        this.name = name;
-    }
-
-    public Right() {
-    }
-
-    public Right(long id, String name) {
-        this.id = id;
-        this.name = name;
+    public void setRightName(String rightName) {
+        this.rightName = rightName;
     }
 }

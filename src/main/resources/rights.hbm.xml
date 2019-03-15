@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="models">
+    <class name="Right" table="rights">
+        <id name="rightId" column="rightId">
+            <generator class="increment"/>
+        </id>
+        <property name="rightName" type="string" column="rightName"/>
+        <many-to-one name="role" class="models.Role" fetch="select">
+            <column name="getRole"/>
+        </many-to-one>
+
+    </class>
+</hibernate-mapping>

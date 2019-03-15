@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 @Entity
-@Table(name = "carts_")
+@Table(name = "carts")
 public class Cart implements Serializable {
 
     @Id

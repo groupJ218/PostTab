@@ -1,56 +1,48 @@
+import dao.DaoModels;
 import models.Cart;
 import models.Product;
+import models.Right;
+import models.Role;
 import org.hibernate.Session;
 import utils.HibernateConnector;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static dao.DaoModels.getById;
+
 public class Main {
     public static void main(String[] args) {
-        long id = 1;
-        Product product = getById(1, new Product());
-        Cart cart = (Cart) getById(id,new Cart());
-        product.setCart(cart);
-        System.out.println(cart.toString());
-        update(cart);
-        System.out.println(getById(id, cart));
-    }
+
+        Right right = new Right();
+        right.setRightName("admin");
+        DaoModels.create(right);
 
 
-    private static void createProduct(Product product) {
-        Session session = HibernateConnector.getSession();
-        session.beginTransaction();
-        session.save(product);
-        session.getTransaction().commit();
-        session.close();
+
+//        long id = 1;
+////        get product from DB
+//        Product product = getById(1, new Product());
+//        System.out.println(product);
+//        System.out.println("======================");
+////        get Cart from DB
+//        Cart cart = getById(id, new Cart());
+//        product.setCart(cart);
+//        DaoModels.update(product);
+//
+//        System.out.println("======================");
+//        System.out.println(getById(id, cart));
     }
 
-    private static void update(Object o) {
-        Session session = HibernateConnector.getSession();
-        session.beginTransaction();
-        session.update(o);
-        session.getTransaction().commit();
-        session.close();
-    }
+//    private static void createProduct(Product product) {
+//        Session session = HibernateConnector.getSession();
+//        session.beginTransaction();
+//        session.save(product);
+//        session.getTransaction().commit();
+//        session.close();
+//    }
 
-    private static void deleteById(long id, Object o) {
-        Session session = HibernateConnector.getSession();
-        session.beginTransaction();
-        session.delete(getById(id, o.getClass()));
-        session.getTransaction().commit();
-        session.close();
-    }
 
-    private static <T> T getById (long id, T t) {
-        T oTmp = null;
-        Class<?> cls = t.getClass();
-                Session session = HibernateConnector.getSession();
-        System.out.println(t);
-        oTmp  = (T) session.get(cls , id);
-        session.close();
-        return oTmp;
-    }
 
     private static void createListCarts() {
         int count = 0;

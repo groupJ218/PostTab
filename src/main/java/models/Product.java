@@ -7,7 +7,7 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "products_")
+@Table(name = "products")
 public class Product implements Serializable {
     @Id
     @GeneratedValue
