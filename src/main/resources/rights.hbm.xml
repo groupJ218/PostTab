@@ -5,13 +5,10 @@
 
 <hibernate-mapping package="models">
     <class name="Right" table="rights">
-        <id name="rightId" column="rightId">
+        <id name="rightId" type="long" column="rightId">
             <generator class="increment"/>
         </id>
         <property name="rightName" type="string" column="rightName"/>
-        <many-to-one name="role" class="models.Role" fetch="select">
-            <column name="getRole"/>
-        </many-to-one>
-
+        <many-to-one name="role" class="models.Role" column="roleId" fetch="select"/>
     </class>
 </hibernate-mapping>

@@ -13,12 +13,17 @@ import static dao.DaoModels.getById;
 
 public class Main {
     public static void main(String[] args) {
+        Role role = new Role();
+        role.setDefault(true);
+        role.setRoleName("User");
+        DaoModels.create(role);
 
-        Right right = new Right();
-        right.setRightName("admin");
-        DaoModels.create(right);
+//        Right right = new Right();
+//        right.setRightName("admin");
+//        DaoModels.create(right);
 
 
+//        DaoModels.create(role);
 
 //        long id = 1;
 ////        get product from DB
@@ -41,7 +46,6 @@ public class Main {
 //        session.getTransaction().commit();
 //        session.close();
 //    }
-
 
 
     private static void createListCarts() {

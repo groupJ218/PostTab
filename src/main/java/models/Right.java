@@ -1,34 +1,25 @@
 package models;
 
-import java.util.Objects;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
+import javax.persistence.*;
+
+@Data
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+//@Entity
+//@Table (name = "rights")
 public class Right {
-
+//    @Id
+//    @Column
     private long rightId;
+//    @Column
     private String rightName;
+//    @ManyToOne
     private Role role;
 
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
-    public long getRightId() {
-        return rightId;
-    }
-
-    public void setRightId(long rightId) {
-        this.rightId = rightId;
-    }
-
-    public String getRightName() {
-        return rightName;
-    }
-
-    public void setRightName(String rightName) {
-        this.rightName = rightName;
-    }
 }

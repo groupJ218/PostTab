@@ -948,23 +948,55 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="241" parent="8" name="rights">
+    <table id="241" parent="8" name="hibernate_sequence">
       <Engine>MyISAM</Engine>
     </table>
-    <column id="242" parent="241" name="rightId">
+    <table id="242" parent="8" name="rights">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="243" parent="8" name="role">
+      <Engine>MyISAM</Engine>
+    </table>
+    <column id="244" parent="241" name="next_val">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="245" parent="242" name="rightId">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="241" name="rightName">
+    <column id="246" parent="242" name="rightName">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="244" parent="241" name="PRIMARY">
+    <key id="247" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>rightId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="248" parent="243" name="roleId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="243" name="isDefault">
+      <Position>2</Position>
+      <DataType>bit(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="250" parent="243" name="roleName">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="251" parent="243" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>roleId</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

@@ -15,10 +15,11 @@
         <!--<property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>-->
         <!--<property name="hibernate.query.factory_class">org.hibernate.hql.classic.ClassicQueryTranslatorFactory</property>-->
         <!-- DB schema will be updated if needed -->
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
         <!--<mapping class="models.Cart"/>-->
         <!--<mapping class="models.Product"/>-->
-        <!--<mapping class="models.Role"/>-->
+        <mapping class="models.Role"/>
+        <!--<mapping class="models.Right"/>-->
         <!--<mapping class="models.User"/>-->
         <mapping resource="rights.hbm.xml"/>
     </session-factory>

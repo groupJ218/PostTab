@@ -4,12 +4,13 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-@Table
+@AllArgsConstructor
+@Table (name = "roles")
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,10 +20,11 @@ public class Role {
     private boolean isDefault;
     @Column
     private String roleName;
-    @ManyToOne
-    private User user;
-    @OneToMany(mappedBy = "role")
-    private ArrayList<Right> rights;
+//    @ManyToOne
+//    private User user;
+    @OneToMany (mappedBy = "role")
+    private List<Right> rights = new ArrayList<>();
 
-
+//    public Role() {
+//    }
 }
