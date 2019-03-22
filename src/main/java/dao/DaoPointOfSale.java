@@ -20,8 +20,7 @@ public class DaoPointOfSale {
             ResultSet rs = statement.executeQuery(query);
 
             while (rs.next()) {
-                point.setId(rs.getLong("ID"));
-                point.setAddressId(rs.getLong("ADDRESS_ID"));
+                point.setPointId(rs.getLong("ID"));
                 point.setName(rs.getString("NAME"));
             }
         } catch (SQLException e) {

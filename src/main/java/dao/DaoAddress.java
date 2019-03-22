@@ -39,7 +39,7 @@ public class DaoAddress {
             ResultSet rs = st.executeQuery(query);
 
             while (rs.next()) {
-                address.setId(rs.getLong("ID"));
+                address.setAddressId(rs.getLong("ID"));
                 address.setCountry(rs.getString("COUNTRY"));
                 address.setRegion(rs.getString("REGION"));
                 address.setCity(rs.getString("CITY"));

@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.*;
+import java.io.Serializable;
 
 @Data
 @ToString
@@ -13,7 +13,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 //@Entity
 //@Table (name = "rights")
-public class Right {
+public class Right implements Serializable {
 //    @Id
 //    @Column
     private long rightId;

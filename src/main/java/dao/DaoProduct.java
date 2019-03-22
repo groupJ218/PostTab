@@ -29,7 +29,7 @@ public class DaoProduct {
 
         try {
             PreparedStatement ps = new Connector().getConnection().prepareStatement(query);
-            ps.setLong(1, product.getPointId());
+            ps.setLong(1, product.getProductId());
             ps.setDouble(2, product.getPrice());
             ps.setDouble(3, product.getAmount());
             ps.setString(4, product.getName());
@@ -52,8 +52,7 @@ public class DaoProduct {
             while (rs.next()) {
                 System.out.println(count++);
                 Product product = new Product();
-                product.setId(rs.getLong("ID"));
-                product.setPointId(rs.getLong("POINT_ID"));
+                product.setProductId(rs.getLong("ID"));
                 product.setPrice(rs.getDouble("PRICE"));
                 product.setAmount(rs.getDouble("AMOUNT"));
                 product.setName(rs.getString("NAME"));
@@ -75,8 +74,6 @@ public class DaoProduct {
             while (rs.next()) {
                 System.out.println(count++);
                 Product product = new Product();
-                product.setId(rs.getLong("ID"));
-                product.setPointId(rs.getLong("POINT_ID"));
                 product.setPrice(rs.getDouble("PRICE"));
                 product.setAmount(rs.getDouble("AMOUNT"));
                 product.setName(rs.getString("NAME"));

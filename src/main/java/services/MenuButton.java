@@ -19,7 +19,7 @@ public class MenuButton {
     public static Scene productsInfo(PointOfSale point) {
         TableView table = new TableView();
         Scene scene = new Scene(new Group());
-        Label label = new Label("Products in point ID: " + point.getId() + " name: " + point.getName());
+        Label label = new Label("Products in point ID: " + point.getPointId() + " name: " + point.getName());
         label.setFont(new Font("Arial", 20));
         table.setEditable(true);
 

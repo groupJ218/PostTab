@@ -957,44 +957,86 @@
     <table id="243" parent="8" name="role">
       <Engine>MyISAM</Engine>
     </table>
-    <column id="244" parent="241" name="next_val">
+    <table id="244" parent="8" name="roles">
+      <Engine>MyISAM</Engine>
+    </table>
+    <column id="245" parent="241" name="next_val">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="242" name="rightId">
+    <column id="246" parent="242" name="rightId">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="242" name="rightName">
+    <column id="247" parent="242" name="rightName">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="247" parent="242" name="PRIMARY">
+    <column id="248" parent="242" name="roleId">
+      <Position>3</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="242" name="role_roleId">
+      <Position>4</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="250" parent="242" name="FKqd7veqri6c90dwhrcoovlvyyr">
+      <ColNames>roleId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="251" parent="242" name="FKe1k60cvpt9nm1bdjl24ee14l8">
+      <ColNames>role_roleId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="252" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>rightId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="248" parent="243" name="roleId">
+    <column id="253" parent="243" name="roleId">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="243" name="isDefault">
+    <column id="254" parent="243" name="isDefault">
       <Position>2</Position>
       <DataType>bit(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="243" name="roleName">
+    <column id="255" parent="243" name="roleName">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="251" parent="243" name="PRIMARY">
+    <key id="256" parent="243" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>roleId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="257" parent="244" name="roleId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="258" parent="244" name="isDefault">
+      <Position>2</Position>
+      <DataType>bit(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="259" parent="244" name="roleName">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="260" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>roleId</ColNames>
       <Primary>1</Primary>
