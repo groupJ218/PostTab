@@ -29,7 +29,7 @@ public class Address implements Serializable {
     private String street;
     @Column
     private String houseNumb;
-    @Column
+    @Column(name = "index_")
     private String index;
     @OneToOne
     private User user;
