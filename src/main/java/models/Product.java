@@ -18,7 +18,7 @@ import java.util.Objects;
 @Table(name = "products")
 public class Product implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column
     private long productId;
     @Column
@@ -29,9 +29,11 @@ public class Product implements Serializable {
     private String name;
     @Column
     private String description;
-    @ManyToOne
+    @ManyToOne (cascade = CascadeType.ALL)
+    @JoinColumn (name = "productId")
     private Cart cart;
-    @ManyToOne
+    @ManyToOne (cascade = CascadeType.ALL)
+    @JoinColumn (name = "productId")
     private Order order;
     @ManyToMany
     private List<PointOfSale> points = new ArrayList<>();

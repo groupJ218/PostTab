@@ -5,21 +5,22 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Data
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-//@Entity
-//@Table (name = "rights")
+@Entity
+@Table(name = "rights")
 public class Right implements Serializable {
-//    @Id
-//    @Column
+    @Id
+    @Column
     private long rightId;
-//    @Column
+    @Column
     private String rightName;
-//    @ManyToOne
+    @ManyToOne
     private Role role;
 
 }

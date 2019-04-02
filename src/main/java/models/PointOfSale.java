@@ -17,7 +17,7 @@ import java.util.List;
 @Table(name = "points")
 public class PointOfSale implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column
     private long pointId;
     @Column

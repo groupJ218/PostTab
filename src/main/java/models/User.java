@@ -18,7 +18,7 @@ import java.util.List;
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column
+    @Column(name = "userId")
     private long userId;
     @Column
     private boolean isBlock;
@@ -42,13 +42,13 @@ public class User implements Serializable {
     private Date lastLoginDate;
     @OneToMany(mappedBy = "user")
     private List<Role> roles = new ArrayList<>();
-    @OneToOne
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Cart carts;
     @ManyToMany
     private List<PointOfSale> points = new ArrayList<>();
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Order> orders = new ArrayList<>();
-    @OneToOne
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Address address;
 
 }

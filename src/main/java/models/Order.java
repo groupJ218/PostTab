@@ -17,18 +17,19 @@ import java.util.List;
 @Table(name = "orders")
 public class Order implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column
     private long orderId;
     @Column
     private double sum;
     @Column
     private Date date;
-    @ManyToOne
+    @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name = "userId")
     private User user;
     @ManyToOne
     private PointOfSale point;
-    @OneToMany
+    @OneToMany(mappedBy = "order", fetch = FetchType.EAGER)
     private List<Product> products = new ArrayList<>();
 
 

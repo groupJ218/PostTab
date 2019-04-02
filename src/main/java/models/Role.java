@@ -14,7 +14,7 @@ import java.util.List;
 @Table (name = "roles")
 public class Role implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column
     private long roleId;
     @Column
