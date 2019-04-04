@@ -11,19 +11,20 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table (name = "roles")
+@Table(name = "roles")
 public class Role implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
     private long roleId;
     @Column
     private boolean isDefault;
     @Column
     private String roleName;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "userId")
     private User user;
-    @OneToMany (mappedBy = "role")
-    private List<Right> rights = new ArrayList<>();
 
+    @OneToMany(mappedBy = "role", fetch = FetchType.LAZY)
+    private List<Right> rights = new ArrayList<>();
 }

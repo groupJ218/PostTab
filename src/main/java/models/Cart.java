@@ -17,13 +17,14 @@ import java.util.List;
 public class Cart implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
     private long cartId;
-    @OneToOne(fetch = FetchType.LAZY)
+
+    @OneToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "userId")
     private User user;
-    @OneToMany(mappedBy = "cart", fetch = FetchType.EAGER)
-    private List<Product> productsInCart = new ArrayList<>();
 
+    @OneToMany(mappedBy = "cart",fetch=FetchType.LAZY)
+    private List<Product> productsInCart = new ArrayList<>();
 }

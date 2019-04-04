@@ -18,7 +18,7 @@ import java.util.Objects;
 @Table(name = "products")
 public class Product implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
     private long productId;
     @Column
@@ -29,13 +29,19 @@ public class Product implements Serializable {
     private String name;
     @Column
     private String description;
-    @ManyToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "productId")
+
+    @ManyToOne(cascade=CascadeType.ALL)
+    @JoinColumn(name = "cartId")
     private Cart cart;
-    @ManyToOne (cascade = CascadeType.ALL)
-    @JoinColumn (name = "productId")
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "orderId")
     private Order order;
-    @ManyToMany
+
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="products_points",
+            joinColumns=@JoinColumn(name="productId"),
+            inverseJoinColumns=@JoinColumn(name="pointId"))
     private List<PointOfSale> points = new ArrayList<>();
 
 

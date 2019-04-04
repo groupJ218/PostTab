@@ -40,15 +40,26 @@ public class User implements Serializable {
     private Date registerDate;
     @Column
     private Date lastLoginDate;
-    @OneToMany(mappedBy = "user")
+
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Role> roles = new ArrayList<>();
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Cart carts;
-    @ManyToMany
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private Cart cart;
+
+    @ManyToMany(mappedBy = "users")
     private List<PointOfSale> points = new ArrayList<>();
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Order> orders = new ArrayList<>();
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Address address;
+
+    public User(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
 }

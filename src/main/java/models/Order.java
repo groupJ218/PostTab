@@ -17,20 +17,22 @@ import java.util.List;
 @Table(name = "orders")
 public class Order implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
     private long orderId;
     @Column
     private double sum;
     @Column
     private Date date;
-    @ManyToOne (fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "userId")
     private User user;
-    @ManyToOne
-    private PointOfSale point;
-    @OneToMany(mappedBy = "order", fetch = FetchType.EAGER)
-    private List<Product> products = new ArrayList<>();
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "pointId")
+    private PointOfSale point;
+
+    @OneToMany(mappedBy = "order", fetch = FetchType.LAZY)
+    private List<Product> products = new ArrayList<>();
 
 }

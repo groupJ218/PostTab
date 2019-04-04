@@ -9,8 +9,8 @@
     <list default="true" id="b2c7f7c5-3758-417c-b040-c370a9260c58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9923ff1a-443f-417a-81e5-9b3a596ad2d2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9923ff1a-443f-417a-81e5-9b3a596ad2d2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Post_TAB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Post_TAB.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoJpaModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoJpaModels.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Order.java" afterDir="false" />
@@ -19,7 +19,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Right.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Right.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <list id="84a8bbf6-9515-45ec-a9bb-51132c020f90" name="Revert &quot;Product_Page_and_product_controller&quot;" comment="Revert &quot;Product_Page_and_product_controller&quot;&#10;&#10;This reverts commit cce628ee" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,6 +56,20 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="mydb: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mydb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mydb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="roles: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mydb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mydb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -67,22 +80,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Address.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="329">
+              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,34 +92,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+        <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/points_users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="245">
+              <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,10 +113,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Right.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/PointOfSale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="396">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,13 +125,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Role.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoJpaModels.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="308">
+              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/roles">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/rights">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -153,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+            <state relative-caret-position="161">
+              <caret line="50" column="34" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,12 +167,172 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
+        <entry file="uml://JAVA/models">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>models</OriginalElement>
+              <nodes>
+                <node x="131.33333333333331" y="0.0">models.Right</node>
+                <node x="114.83333333333333" y="250.0">models.Cart</node>
+                <node x="135.1685606060606" y="170.0">models.User</node>
+                <node x="59.31439393939394" y="330.0">models.Product</node>
+                <node x="3.8333333333333286" y="80.0">models.PointOfSale</node>
+                <node x="133.83333333333331" y="80.0">models.Role</node>
+                <node x="224.83333333333334" y="80.0">models.Address</node>
+                <node x="62.020833333333336" y="420.0">models.Order</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="models.Product" target="models.Order">
+                  <point x="22.5" y="15.0" />
+                  <point x="126.81439393939394" y="380.0" />
+                  <point x="107.52083333333334" y="380.0" />
+                  <point x="6.5" y="-15.0" />
+                </edge>
+                <edge source="models.Right" target="models.Role">
+                  <point x="19.0" y="15.0" />
+                  <point x="188.33333333333331" y="55.0" />
+                  <point x="187.08333333333331" y="55.0" />
+                  <point x="17.75" y="-15.0" />
+                </edge>
+                <edge source="models.Order" target="models.User">
+                  <point x="32.5" y="-15.0" />
+                  <point x="133.52083333333334" y="400.0" />
+                  <point x="206.33333333333331" y="400.0" />
+                  <point x="206.33333333333331" y="220.0" />
+                  <point x="197.2935606060606" y="220.0" />
+                  <point x="26.625" y="15.0" />
+                </edge>
+                <edge source="models.PointOfSale" target="models.User">
+                  <point x="45.83333333333334" y="15.0" />
+                  <point x="104.66666666666667" y="140.0" />
+                  <point x="152.9185606060606" y="140.0" />
+                  <point x="-17.75" y="-15.0" />
+                </edge>
+                <edge source="models.Role" target="models.Right">
+                  <point x="-17.75" y="-15.0" />
+                  <point x="151.58333333333331" y="55.0" />
+                  <point x="150.33333333333331" y="55.0" />
+                  <point x="-19.0" y="15.0" />
+                </edge>
+                <edge source="models.Product" target="models.PointOfSale">
+                  <point x="-33.75" y="-15.0" />
+                  <point x="70.56439393939394" y="310.0" />
+                  <point x="45.99999999999999" y="310.0" />
+                  <point x="45.99999999999999" y="150.0" />
+                  <point x="49.66666666666667" y="150.0" />
+                  <point x="-9.166666666666657" y="15.0" />
+                </edge>
+                <edge source="models.User" target="models.PointOfSale">
+                  <point x="-29.583333333333343" y="-15.0" />
+                  <point x="141.08522727272725" y="150.0" />
+                  <point x="86.33333333333333" y="150.0" />
+                  <point x="27.5" y="15.0" />
+                </edge>
+                <edge source="models.User" target="models.Address">
+                  <point x="17.75" y="-15.0" />
+                  <point x="188.4185606060606" y="140.0" />
+                  <point x="247.33333333333334" y="140.0" />
+                  <point x="-22.5" y="15.0" />
+                </edge>
+                <edge source="models.User" target="models.Role">
+                  <point x="-5.916666666666657" y="-15.0" />
+                  <point x="164.75189393939394" y="130.0" />
+                  <point x="151.58333333333331" y="130.0" />
+                  <point x="-17.75" y="15.0" />
+                </edge>
+                <edge source="models.Role" target="models.User">
+                  <point x="17.75" y="15.0" />
+                  <point x="187.08333333333331" y="130.0" />
+                  <point x="176.58522727272725" y="130.0" />
+                  <point x="5.916666666666657" y="-15.0" />
+                </edge>
+                <edge source="models.User" target="models.Cart">
+                  <point x="-8.875" y="15.0" />
+                  <point x="161.7935606060606" y="230.0" />
+                  <point x="167.33333333333331" y="230.0" />
+                  <point x="17.5" y="-15.0" />
+                </edge>
+                <edge source="models.Product" target="models.Cart">
+                  <point x="11.25" y="-15.0" />
+                  <point x="115.56439393939394" y="310.0" />
+                  <point x="132.33333333333331" y="310.0" />
+                  <point x="-17.5" y="15.0" />
+                </edge>
+                <edge source="models.Address" target="models.User">
+                  <point x="22.5" y="15.0" />
+                  <point x="292.33333333333337" y="150.0" />
+                  <point x="200.25189393939394" y="150.0" />
+                  <point x="29.583333333333343" y="-15.0" />
+                </edge>
+                <edge source="models.Cart" target="models.User">
+                  <point x="-17.5" y="-15.0" />
+                  <point x="132.33333333333331" y="230.0" />
+                  <point x="144.0435606060606" y="230.0" />
+                  <point x="-26.625" y="15.0" />
+                </edge>
+                <edge source="models.PointOfSale" target="models.Product">
+                  <point x="9.166666666666657" y="15.0" />
+                  <point x="67.99999999999999" y="150.0" />
+                  <point x="65.6685606060606" y="150.0" />
+                  <point x="65.6685606060606" y="300.0" />
+                  <point x="93.06439393939394" y="300.0" />
+                  <point x="-11.25" y="-15.0" />
+                </edge>
+                <edge source="models.Order" target="models.PointOfSale">
+                  <point x="-19.5" y="-15.0" />
+                  <point x="81.52083333333334" y="390.0" />
+                  <point x="34.77840909090912" y="390.0" />
+                  <point x="34.77840909090912" y="150.0" />
+                  <point x="31.33333333333333" y="150.0" />
+                  <point x="-27.5" y="15.0" />
+                </edge>
+                <edge source="models.User" target="models.Order">
+                  <point x="8.875" y="15.0" />
+                  <point x="179.5435606060606" y="230.0" />
+                  <point x="195.33333333333331" y="230.0" />
+                  <point x="195.33333333333331" y="390.0" />
+                  <point x="120.52083333333334" y="390.0" />
+                  <point x="19.5" y="-15.0" />
+                </edge>
+                <edge source="models.Order" target="models.Product">
+                  <point x="-6.5" y="-15.0" />
+                  <point x="94.52083333333334" y="380.0" />
+                  <point x="81.81439393939394" y="380.0" />
+                  <point x="-22.5" y="15.0" />
+                </edge>
+                <edge source="models.PointOfSale" target="models.Order">
+                  <point x="-45.83333333333333" y="15.0" />
+                  <point x="13.0" y="150.0" />
+                  <point x="23.778409090909122" y="150.0" />
+                  <point x="23.778409090909122" y="400.0" />
+                  <point x="68.52083333333334" y="400.0" />
+                  <point x="-32.5" y="-15.0" />
+                </edge>
+                <edge source="models.Cart" target="models.Product">
+                  <point x="17.5" y="15.0" />
+                  <point x="167.33333333333331" y="310.0" />
+                  <point x="138.06439393939394" y="310.0" />
+                  <point x="33.75" y="-15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-76.0" y="184.0" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/Role.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="2993" selection-start-line="2993" selection-end-line="2993" />
+            <state relative-caret-position="307">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
-                <element signature="e#117955#117956#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,17 +398,17 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/utils/JpaConnector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/DaoJpaModels.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/PointOfSale.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Right.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/models/Address.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Cart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/DaoJpaModels.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Right.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Cart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/PointOfSale.java" />
       </list>
     </option>
   </component>
@@ -290,6 +454,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -332,34 +497,10 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PostTab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PostTab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PostTab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PostTab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PostTab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PostTab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,7 +508,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554229720868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554400886632" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -548,7 +689,8 @@
       <workItem from="1553618935533" duration="6965000" />
       <workItem from="1553795963791" duration="7963000" />
       <workItem from="1553880809160" duration="7756000" />
-      <workItem from="1554220619941" duration="5548000" />
+      <workItem from="1554220619941" duration="7374000" />
+      <workItem from="1554390654552" duration="6402000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring architecture">
       <created>1544999744705</created>
@@ -809,11 +951,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553849725650</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="annotations_oneToOne_and_OneTomAny_work_example">
+      <created>1554229980729</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1554229980730</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282047000" />
+    <option name="totallyTimeSpent" value="290275000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -828,7 +977,7 @@
     <frame x="-7" y="2" width="1376" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4832827" visible="true" weight="0.18541034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4832827" visible="true" weight="0.18844984" />
       <window_info id="Structure" order="1" sideWeight="0.5040917" side_tool="true" weight="0.20801815" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -868,6 +1017,47 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" visible="true" weight="0.14513677" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4832827" visible="true" weight="0.18844984" />
+      <window_info id="Structure" order="1" sideWeight="0.5040917" side_tool="true" weight="0.20801815" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.5167173" side_tool="true" weight="0.25037822" />
+      <window_info id="DB Browser" order="8" weight="0.32980332" />
+      <window_info id="Project Explorer" order="9" weight="0.32980332" />
+      <window_info id="Job Explorer" order="10" />
+      <window_info id="Persistence" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32569557" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.34833333" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32983682" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" weight="0.32569557" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32867134" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.325" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49924356" weight="0.64811784" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.3289689" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="Console" order="16" />
+      <window_info anchor="bottom" id="DB Execution Console" order="17" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.13884674" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.14513677" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -916,7 +1106,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="DAO_products_Method_getProdByPointId_and_getProductById" />
     <MESSAGE value="JavaFX_example_using" />
     <MESSAGE value="add_maven_and_web_modules" />
     <MESSAGE value="Html_css_presentation" />
@@ -941,24 +1130,14 @@
     <MESSAGE value="Annotyated all models" />
     <MESSAGE value="JPA_integration" />
     <MESSAGE value="JPA_DAO_service" />
-    <option name="LAST_COMMIT_MESSAGE" value="JPA_DAO_service" />
+    <MESSAGE value="annotations_oneToOne_and_OneTomAny_work_example" />
+    <option name="LAST_COMMIT_MESSAGE" value="annotations_oneToOne_and_OneTomAny_work_example" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/carts__products_" />
-    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/carts_" />
-    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/points" />
-    <entry file="das://e71773e2-c984-4390-9f76-aa4764c99e7b/schema/mydb/table/products_" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoRights.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/rights/RightsUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -988,13 +1167,6 @@
       </provider>
     </entry>
     <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/rights">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1104,13 +1276,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/points_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/orders_products">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1205,33 +1370,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoJpaModels.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/PointOfSale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/rights.hbm.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1247,57 +1392,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Right.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="2993" selection-start-line="2993" selection-end-line="2993" />
-          <folding>
-            <element signature="e#117955#117956#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/addresses">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1325,19 +1423,54 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.6356228172293364" x="420.5" y="409.5" />
+          <settings layout="Hierarchic Group" zoom="0.6356228172293364" x="421.0" y="410.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Cart.java">
+    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/carts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="31" />
+        <state relative-caret-position="63976">
+          <caret line="2993" selection-start-line="2993" selection-end-line="2993" />
+          <folding>
+            <element signature="e#117955#117956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/EntityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1346,31 +1479,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="-265">
+          <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Address.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Right.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="66">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/points_products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/points">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/points_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9923ff1a-443f-417a-81e5-9b3a596ad2d2/schema/mydb/table/rights">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1380,31 +1547,212 @@
           <ID>JAVA</ID>
           <OriginalElement>models</OriginalElement>
           <nodes>
-            <node x="" y="">models.Cart</node>
-            <node x="" y="">models.Right</node>
-            <node x="" y="">models.User</node>
-            <node x="" y="">models.Product</node>
-            <node x="" y="">models.PointOfSale</node>
-            <node x="" y="">models.Address</node>
-            <node x="" y="">models.Role</node>
-            <node x="" y="">models.Order</node>
+            <node x="131.33333333333331" y="0.0">models.Right</node>
+            <node x="114.83333333333333" y="250.0">models.Cart</node>
+            <node x="135.1685606060606" y="170.0">models.User</node>
+            <node x="59.31439393939394" y="330.0">models.Product</node>
+            <node x="3.8333333333333286" y="80.0">models.PointOfSale</node>
+            <node x="133.83333333333331" y="80.0">models.Role</node>
+            <node x="224.83333333333334" y="80.0">models.Address</node>
+            <node x="62.020833333333336" y="420.0">models.Order</node>
           </nodes>
           <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.8" x="535.625" y="321.25" />
+          <edges>
+            <edge source="models.Product" target="models.Order">
+              <point x="22.5" y="15.0" />
+              <point x="126.81439393939394" y="380.0" />
+              <point x="107.52083333333334" y="380.0" />
+              <point x="6.5" y="-15.0" />
+            </edge>
+            <edge source="models.Right" target="models.Role">
+              <point x="19.0" y="15.0" />
+              <point x="188.33333333333331" y="55.0" />
+              <point x="187.08333333333331" y="55.0" />
+              <point x="17.75" y="-15.0" />
+            </edge>
+            <edge source="models.Order" target="models.User">
+              <point x="32.5" y="-15.0" />
+              <point x="133.52083333333334" y="400.0" />
+              <point x="206.33333333333331" y="400.0" />
+              <point x="206.33333333333331" y="220.0" />
+              <point x="197.2935606060606" y="220.0" />
+              <point x="26.625" y="15.0" />
+            </edge>
+            <edge source="models.PointOfSale" target="models.User">
+              <point x="45.83333333333334" y="15.0" />
+              <point x="104.66666666666667" y="140.0" />
+              <point x="152.9185606060606" y="140.0" />
+              <point x="-17.75" y="-15.0" />
+            </edge>
+            <edge source="models.Role" target="models.Right">
+              <point x="-17.75" y="-15.0" />
+              <point x="151.58333333333331" y="55.0" />
+              <point x="150.33333333333331" y="55.0" />
+              <point x="-19.0" y="15.0" />
+            </edge>
+            <edge source="models.Product" target="models.PointOfSale">
+              <point x="-33.75" y="-15.0" />
+              <point x="70.56439393939394" y="310.0" />
+              <point x="45.99999999999999" y="310.0" />
+              <point x="45.99999999999999" y="150.0" />
+              <point x="49.66666666666667" y="150.0" />
+              <point x="-9.166666666666657" y="15.0" />
+            </edge>
+            <edge source="models.User" target="models.PointOfSale">
+              <point x="-29.583333333333343" y="-15.0" />
+              <point x="141.08522727272725" y="150.0" />
+              <point x="86.33333333333333" y="150.0" />
+              <point x="27.5" y="15.0" />
+            </edge>
+            <edge source="models.User" target="models.Address">
+              <point x="17.75" y="-15.0" />
+              <point x="188.4185606060606" y="140.0" />
+              <point x="247.33333333333334" y="140.0" />
+              <point x="-22.5" y="15.0" />
+            </edge>
+            <edge source="models.User" target="models.Role">
+              <point x="-5.916666666666657" y="-15.0" />
+              <point x="164.75189393939394" y="130.0" />
+              <point x="151.58333333333331" y="130.0" />
+              <point x="-17.75" y="15.0" />
+            </edge>
+            <edge source="models.Role" target="models.User">
+              <point x="17.75" y="15.0" />
+              <point x="187.08333333333331" y="130.0" />
+              <point x="176.58522727272725" y="130.0" />
+              <point x="5.916666666666657" y="-15.0" />
+            </edge>
+            <edge source="models.User" target="models.Cart">
+              <point x="-8.875" y="15.0" />
+              <point x="161.7935606060606" y="230.0" />
+              <point x="167.33333333333331" y="230.0" />
+              <point x="17.5" y="-15.0" />
+            </edge>
+            <edge source="models.Product" target="models.Cart">
+              <point x="11.25" y="-15.0" />
+              <point x="115.56439393939394" y="310.0" />
+              <point x="132.33333333333331" y="310.0" />
+              <point x="-17.5" y="15.0" />
+            </edge>
+            <edge source="models.Address" target="models.User">
+              <point x="22.5" y="15.0" />
+              <point x="292.33333333333337" y="150.0" />
+              <point x="200.25189393939394" y="150.0" />
+              <point x="29.583333333333343" y="-15.0" />
+            </edge>
+            <edge source="models.Cart" target="models.User">
+              <point x="-17.5" y="-15.0" />
+              <point x="132.33333333333331" y="230.0" />
+              <point x="144.0435606060606" y="230.0" />
+              <point x="-26.625" y="15.0" />
+            </edge>
+            <edge source="models.PointOfSale" target="models.Product">
+              <point x="9.166666666666657" y="15.0" />
+              <point x="67.99999999999999" y="150.0" />
+              <point x="65.6685606060606" y="150.0" />
+              <point x="65.6685606060606" y="300.0" />
+              <point x="93.06439393939394" y="300.0" />
+              <point x="-11.25" y="-15.0" />
+            </edge>
+            <edge source="models.Order" target="models.PointOfSale">
+              <point x="-19.5" y="-15.0" />
+              <point x="81.52083333333334" y="390.0" />
+              <point x="34.77840909090912" y="390.0" />
+              <point x="34.77840909090912" y="150.0" />
+              <point x="31.33333333333333" y="150.0" />
+              <point x="-27.5" y="15.0" />
+            </edge>
+            <edge source="models.User" target="models.Order">
+              <point x="8.875" y="15.0" />
+              <point x="179.5435606060606" y="230.0" />
+              <point x="195.33333333333331" y="230.0" />
+              <point x="195.33333333333331" y="390.0" />
+              <point x="120.52083333333334" y="390.0" />
+              <point x="19.5" y="-15.0" />
+            </edge>
+            <edge source="models.Order" target="models.Product">
+              <point x="-6.5" y="-15.0" />
+              <point x="94.52083333333334" y="380.0" />
+              <point x="81.81439393939394" y="380.0" />
+              <point x="-22.5" y="15.0" />
+            </edge>
+            <edge source="models.PointOfSale" target="models.Order">
+              <point x="-45.83333333333333" y="15.0" />
+              <point x="13.0" y="150.0" />
+              <point x="23.778409090909122" y="150.0" />
+              <point x="23.778409090909122" y="400.0" />
+              <point x="68.52083333333334" y="400.0" />
+              <point x="-32.5" y="-15.0" />
+            </edge>
+            <edge source="models.Cart" target="models.Product">
+              <point x="17.5" y="15.0" />
+              <point x="167.33333333333331" y="310.0" />
+              <point x="138.06439393939394" y="310.0" />
+              <point x="33.75" y="-15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-76.0" y="184.0" />
           <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-          </Categories>
+          <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Cart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
-          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="50" column="34" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/PointOfSale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoJpaModels.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

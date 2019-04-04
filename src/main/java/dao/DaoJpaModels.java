@@ -8,6 +8,12 @@ import java.util.List;
 
 public class DaoJpaModels {
 
+    public static  <T> void   persist(T o) {
+        JpaConnector.getEntityManager().getTransaction().begin();
+        JpaConnector.getEntityManager().persist(o);
+        JpaConnector.getEntityManager().getTransaction().commit();
+    }
+
     public static <T> T add(T o) {
         JpaConnector.getEntityManager().getTransaction().begin();
         o = JpaConnector.getEntityManager().merge(o);

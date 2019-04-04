@@ -16,11 +16,16 @@ import java.io.Serializable;
 @Table(name = "rights")
 public class Right implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
     private long rightId;
     @Column
     private String rightName;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "roleId")
     private Role role;
 
+    public Right(String rightName) {
+        this.rightName = rightName;
+    }
 }

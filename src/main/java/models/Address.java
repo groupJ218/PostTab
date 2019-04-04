@@ -8,6 +8,7 @@ import net.bytebuddy.build.ToStringPlugin;
 
 import javax.persistence.*;
 import java.io.Serializable;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,7 +18,7 @@ import java.io.Serializable;
 public class Address implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column (name = "addressId")
+    @Column(name = "addressId")
     private long addressId;
     @Column
     private String country;
@@ -33,7 +34,8 @@ public class Address implements Serializable {
     private String houseNumb;
     @Column(name = "index_")
     private String index;
-    @OneToOne (fetch = FetchType.LAZY)
-    @JoinColumn (name="userId")
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "userId")
     private User user;
 }
